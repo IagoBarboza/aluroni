@@ -1,3 +1,4 @@
+import classNames from 'classnames'
 import React from 'react'
 import filters from './filters.json'
 import styles from './Filters.module.scss'
@@ -20,7 +21,10 @@ export default function Filters({ value, setValue }: FiltersProps) {
     <div className={styles.filters}>
       {filters.map(f => (
         <button
-          className={`${styles.filters__filter} ${value === f.id ? styles['filters__filter--active']: ''}`}
+          className={classNames({
+            [styles.filters__filter]: true,
+            [styles['filters__filter--active']]: value === f.id
+          })}
           key={f.id}
           onClick={() => selectFilter(f)}
         >
