@@ -4,6 +4,7 @@ import Search from './Search'
 import { useState } from 'react'
 import Filters from './Filters'
 import Sort from './Sort'
+import List from './List'
 
 export default function Menu() {
   const [searchValue, setSearchValue] = useState('')
@@ -38,6 +39,8 @@ export default function Menu() {
             setValue={setSortValue}
           />
         </div>
+
+        <List />
       </section>
     </main>
   )
