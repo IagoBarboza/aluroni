@@ -13,6 +13,7 @@ export default function Search({ value, setValue }: SearchProps) {
       <input
         value={value}
         onChange={e => setValue(e.target.value)}
+        placeholder="Search"
       />
       <CgSearch 
         size={20}
