@@ -6,7 +6,10 @@ export default function List() {
   return (
     <div className={styles.list}>
       {items.map(item => (
-        <Item key={item.id} />
+        <Item
+          key={item.id}
+          {...item}
+        />
       ))}
     </div>
   )

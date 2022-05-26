@@ -63,7 +63,7 @@ $veganos: #80aa40;
       margin: 10px;
     }
   }
-  &__type {
+  &__category {
     align-items: center;
     border-radius: 2px;
     display: flex;
@@ -86,8 +86,8 @@ $veganos: #80aa40;
       background-color: $veganos;
     }
   }
-  &__portion,
-  &__serves,
+  &__size,
+  &__serving,
   &__price {
     align-items: center;
     display: flex;
