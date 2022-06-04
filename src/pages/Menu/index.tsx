@@ -40,7 +40,11 @@ export default function Menu() {
           />
         </div>
 
-        <List />
+        <List
+          search={searchValue}
+          filter={filterValue}
+          sort={sortValue}
+        />
       </section>
     </main>
   )
